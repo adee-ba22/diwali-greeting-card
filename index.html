@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Happy Diwali ✨ Interactive 3D Greeting Card</title>
+  
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Happy Diwali ✨ Interactive 3D Greeting Card">
+  <meta name="description" content="A magical, interactive Diwali greeting card with glowing diyas, 3D card unboxing, sparkling fireworks, celestial Indian festive music, and personal wishes!">
+  <meta name="theme-color" content="#17072c">
+
+  <!-- Open Graph / WhatsApp / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Happy Diwali! ✨ A Special Festive Surprise For You 🪔">
+  <meta property="og:description" content="Open your personalized interactive Diwali card with 3D surprises, glowing diyas and sparkling fireworks!">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@600;700;800&family=Great+Vibes&family=Outfit:wght@300;400;500;600;700&family=Rozha+One&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            midnight: '#090216',
+            festivePurple: '#1e0638',
+            royalPurple: '#2c0b56',
+            festiveGold: '#f59e0b',
+            brightGold: '#fbbf24',
+            lightGold: '#fef08a',
+            amberFlame: '#ea580c',
+            rosePink: '#f43f5e'
+          },
+          fontFamily: {
+            display: ['"Cinzel Decorative"', 'serif'],
+            heading: ['Cinzel', 'serif'],
+            script: ['"Great Vibes"', 'cursive'],
+            body: ['Outfit', 'sans-serif'],
+            festive: ['"Rozha One"', 'serif']
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Canvas Confetti Library -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+  <!-- React 18 & ReactDOM UMD -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+
+  <!-- Babel Standalone for Browser JSX Compilation -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- Custom App Styles -->
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="bg-[#090216] text-white">
+
+  <!-- React App Root Container -->
+  <div id="root">
+    <!-- Initial Loading State while Scripts Load -->
+    <div class="min-h-screen flex flex-col items-center justify-center p-6 text-center">
+      <div class="w-16 h-16 rounded-full border-4 border-amber-400 border-t-transparent animate-spin mb-4"></div>
+      <p class="font-heading text-yellow-300 text-lg tracking-widest animate-pulse">
+        LIGHTING THE DIYAS... 🪔
+      </p>
+    </div>
+  </div>
+
+  <!-- Application Script -->
+  <script type="text/babel" src="./app.js"></script>
+</body>
+</html>

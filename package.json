@@ -1,0 +1,26 @@
+{
+  "name": "diwali-greeting-card",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Happy Diwali ✨ Interactive 3D Greeting Card Web App",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  },
+  "keywords": [
+    "diwali",
+    "greeting-card",
+    "react",
+    "fireworks",
+    "web-audio",
+    "canvas",
+    "github-pages"
+  ],
+  "author": "Antigravity",
+  "license": "MIT"
+}
